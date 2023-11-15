@@ -1,0 +1,58 @@
+/* //// part 1 //// */
+
+#button{
+    font-size: xx-large;
+    padding: 5px 30px 5px;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+/* //// part 2 //// */
+
+#countryFlag {
+    max-width: 100%;
+    max-height: 100px;
+    margin-top: 10px;
+}
+
+/* //// part 4 //// */
+
+#box1{
+    border: 1px solid;
+    max-width: 500px;
+    background-color: rgb(227, 227, 227);
+    padding-left: 5px;
+}
+#box1 button{
+    float: right ;
+    border: none;
+    color: blue;
+    background-color: rgb(227, 227, 227);
+    text-decoration: underline;
+    font-size: large;
+
+}
+#box1 button:hover{
+    color: #001B79;
+}
+
+#box2{
+    border: 1px solid;
+    max-width: 500px;
+    padding-left: 5px;
+    margin-top: 5px;
+    display: none;
+}
+
+
+#box2 button{
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    font-size: large;
+    background-color: white;
+}
+#box2 button:hover{
+    color: #001B79;
+}
+

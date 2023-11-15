@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task 5</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--------- part 1 --------->
+
+    <button onclick="changeBackground()" id="button" >Hello World!</button>
+    <br><br><hr>
+    <!--------- part 2 --------->
+    
+    <select id="countryDropdown" onchange="showFlag()">
+        <option>select country</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Palestine">Palestine</option>
+    </select>
+    <div class="img">
+        <img id="countryFlag" src="" alt="">
+    </div>  
+
+    <br><br><hr>
+
+    <!--------- part 3 --------->
+
+    <table>
+        <tr>
+            <td><label for="password">Password (min 6 characters):</label></td>
+            <td><input type="password" name="password" id="password" oninput="validatePassword()"></td>
+            <td id="minLength" style="color: red; display: none;">Too Short</td>
+        </tr>
+        <tr>
+            <td><label for="repeatPassword">repeat password:</label></td>
+            <td><input type="password" name="repeatPassword" id="repeatPassword" oninput="validatePassword()"></td>
+            <td id="notMatch" style=" color: red; display: none;">the two passwords don't match</td>
+        </tr>
+        <tr><td><button id="submitPassword" type="submit" style="display: none;">Submit</button></td></tr>
+    </table>
+    <br><br><hr>
+
+    <!--------- part 4 --------->
+
+    <div id="box1">
+        <h2>What is lorem ipsum ?<button id="showButton" onclick="showingBox()">Show</button></h2>
+    </div>
+    <div id="box2">
+        <h2>Why do we use it ?</h2>
+        <p style="background-color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dignissimos delectus animi, minus id culpa optio! Odio earum obcaecati molestiae ratione ex porro debitis modi sed tempora, saepe asperiores mollitia!
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid corporis error cumque, modi magnam asperiores provident officiis maxime dolorem quis voluptates dolor earum totam velit omnis aut, blanditiis architecto? Lorem ipsum,
+           dolor sit amet consectetur adipisicing elit. Eveniet, dolorum earum deleniti iure eos accusamus quos, ipsam aperiam velit vitae voluptate dignissimos et reiciendis,
+           culpa inventore numquam cupiditate nulla aliquid.
+        </p>
+        <button onclick="hidingBox()">Hide</button>
+    </div>
+    <br><br><hr>
+    <!--------- part 5 --------->
+
+    <select name="fontFamily" id="fontFamily" onchange="changeFontFamily()">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Open Sans">Open Sans</option>
+    </select>
+
+    <select id="fontSize" onchange="changeFontSize()">
+        <option value="12">12px</option>
+        <option value="16">16px</option>
+        <option value="20">20px</option>
+        <option value="24">24px</option>
+    </select>
+
+    <label for="italic">Italic</label><input type="checkbox" value="italic" name="italic" id="italic" onchange="changeToItalic()">
+    <label for="bold">Bold</label><input type="checkbox" name="bold" id="bold" value="bold" onchange="changeToBold()">
+    <label for="underline">Underline</label><input type="checkbox" name="underline" id="underline" value="underline" onchange="changeToUnderline()">
+    <div style="margin-top: 5px;">
+        <textarea id="textArea" rows="4" cols="100" style="max-width: 500px;">The quick brown fox jumbs over the lazy dog.</textarea>
+    </div>
+    
+    <br><br><hr>
+    <!--------- part 6 --------->
+
+    <div style="margin: 3px; max-width: 300px; height: 200px; background-color: blue;" id="colorBox"></div>
+    
+    <script src="Js.js"></script>
+</body>
+</html>
